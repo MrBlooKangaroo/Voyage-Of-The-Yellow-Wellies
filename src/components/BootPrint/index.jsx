@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-const BootPrint = ({ id, src, alt, linkUrl }) => 
+const BootPrint = ({ id, name, photoUrl, linkUrl }) => 
     <a 
         href={linkUrl} 
         target='_blank' 
@@ -9,8 +9,8 @@ const BootPrint = ({ id, src, alt, linkUrl }) =>
     >
         <img
             id={id}
-            src={src}
-            alt={alt}
+            src={photoUrl}
+            alt={name}
             className='bootprint'
         />
     </a>

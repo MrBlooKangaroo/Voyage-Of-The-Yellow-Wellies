@@ -23,13 +23,13 @@
 }
 
 #hdrSubtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     position: fixed;
     font-family: 'Rumble Brave';
-    color: #524b28;
-    left: 5.8rem;
+    color: #796c28;
+    left: 5.3rem;
     letter-spacing: 2.8px;
-    top: 7.5rem;
+    top: 7.9rem;
 }
 
 #map {

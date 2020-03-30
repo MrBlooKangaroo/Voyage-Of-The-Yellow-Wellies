@@ -10,7 +10,7 @@ const { bootPrints } = rivers[0]
 const t = {
     titleVoyage: 'Voyage of the',
     titleWellies: 'Yellow Wellies',
-    subtitle: 'An Exploration of the SuAsCo Watershed'
+    subtitle: '(An Exploration of the SuAsCo Watershed)'
 }
 
 const Home = props => (
@@ -20,7 +20,7 @@ const Home = props => (
         <h3 id='hdrSubtitle'>{t.subtitle}</h3>
         {/* {videos.map(video => <VideoPlayer {...video} key={video.id} />)} */}
         <img id='map' src={map.src} alt={map.alt} />
-        <BootPrint {...bootPrints[0]} />
+        {/* <BootPrint {...bootPrints[0]} /> */}
     </div>
 )
 
