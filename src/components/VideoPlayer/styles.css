@@ -1,0 +1,12 @@
+.playerContainer {
+    border: solid 3px aquamarine;
+}
+
+.player {
+    position: absolute;
+}
+
+.videoAssabet {
+    left: 50%;
+    top: 50%;
+}

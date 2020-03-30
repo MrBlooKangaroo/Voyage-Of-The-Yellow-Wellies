@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Sail&display=swap');
+
+@font-face {
+    font-family: 'Andes';
+    src: local('Andes'), url(../../assets/fonts/andes.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Rumble Brave';
+    src: local('Rumble Brave'), url(../../assets/fonts/rumble-brave.woff) format('woff');
+}

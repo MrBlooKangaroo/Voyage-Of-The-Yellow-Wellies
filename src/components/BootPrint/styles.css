@@ -1,0 +1,8 @@
+.bootprint {
+    width: 5vh;
+}
+.bootprint:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(2px 5px 1px yellow);
+    transition-duration: 300ms;
+}
