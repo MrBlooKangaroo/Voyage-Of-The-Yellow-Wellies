@@ -1,18 +1,19 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+import { Player } from 'video-react'
+import "../../../node_modules/video-react/dist/video-react.css"
 import './styles.css'
 
 import { camelize } from '../../utils/common'
 
-const VideoPlayer = props => 
-    <section id={camelize(props.name)} className="playerContainer">
-        <h2 className='playerTitle'>{props.name}</h2>
-        <ReactPlayer 
-            url={props.url}
+const VideoPlayer = ({ name, videoUrl}) => 
+    <div className={`playerContainer ${camelize(name)}Video`}>
+        <Player 
+            src={videoUrl}
             className='player'
-            playing
+            loop
             muted
+            autoPlay
         />
-    </section>
+    </div>
 
 export default VideoPlayer

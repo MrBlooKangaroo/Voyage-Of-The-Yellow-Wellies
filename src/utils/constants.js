@@ -2,6 +2,13 @@ export const paths = {
     home: '/'
 }
 
+export const bootPrintXY = {
+    assabet: [
+        [],
+
+    ]
+}
+
 export const assets = {
     map: {
         src: 'https://yellow-wellies-production.s3.amazonaws.com/assets/SuAsCoMap.png',
@@ -19,13 +26,19 @@ export const rivers = [
                 id: 1,
                 name: 'Upper Assabet Report Card',
                 photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A1.png',
-                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-assabet-river/'
+                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-assabet-river/',
+                x: 7.6,
+                y: 12.9,
+                angle: -9
             },
             {
                 id: 2,
                 name: 'Assabet Headwaters',
                 photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A2.png',
-                linkUrl: 'http://www.oars3rivers.org/river/tributaries/assabet-headwaters'
+                linkUrl: 'http://www.oars3rivers.org/river/tributaries/assabet-headwaters',
+                x: 16,
+                y: 18,
+                angle: 15
             },
             {
                 id: 3,

@@ -32,10 +32,14 @@
     top: 7.9rem;
 }
 
-#map {
-    height: 95vh;
+#mapContainer {
     margin: auto;
     margin-top: 2vh;
+    position: relative;
+}
+
+#map {
+    height: 95vh;
     opacity: 0.36;
     filter: drop-shadow(5px 14px 7px #222) brightness(0.94) saturate(1.6);
     z-index: -99;

@@ -1,12 +1,17 @@
 .playerContainer {
-    border: solid 3px aquamarine;
-}
-
-.player {
     position: absolute;
+    width: 23vh;
+    border-radius: 1.2rem;
+    border: solid 1px #f1c627;
+    overflow: hidden;
 }
 
-.videoAssabet {
-    left: 50%;
-    top: 50%;
+.assabetVideo {
+    left: 14vh;
+    bottom: 58vh;
+    box-shadow: 2px 3px 2px #887736, 5px 12px 13px #e6be277a;
+}
+
+.video-react-control-bar {
+    display: none !important;
 }
