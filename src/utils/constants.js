@@ -150,90 +150,90 @@ export const rivers = [
                 name: 'Upper Sudbury Report Card',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S1.png`,
                 linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-sudbury-river/',
-                x: 47.7,
-                y: 18,
-                angle: 41
+                x: 43.5,
+                y: 11,
+                angle: 19
             },
             {
                 id: 2,
                 name: 'Lake Sudbury',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S2.png`,
                 linkUrl: 'https://www.walden.org/property/fairhaven-bay/',
-                x: 54.3,
-                y: 21,
-                angle: 41
+                x: 49.3,
+                y: 13.8,
+                angle: 35
             },
             {
                 id: 3,
                 name: 'Great Meadows National Wildlife Refuge',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S3.png`,
                 linkUrl: 'https://www.fws.gov/refuge/great_meadows/',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 49.1,
+                y: 19.6,
+                angle: 27
             },
             {
                 id: 4,
                 name: 'Water Cycle',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S4.png`,
                 linkUrl: 'http://www.oars3rivers.org/river/watercycle',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 54.4,
+                y: 22,
+                angle: 42
             },
             {
                 id: 5,
                 name: 'Climate Change',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S5.png`,
                 linkUrl: 'http://www.oars3rivers.org/threats/natural-flow',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 55.1,
+                y: 28.1,
+                angle: 23
             },
             {
                 id: 6,
                 name: 'Water Pollution',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S6.png`,
                 linkUrl: 'http://www.oars3rivers.org/threats/water-pollution',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 59,
+                y: 32.3,
+                angle: 2
             },
             {
                 id: 7,
                 name: 'Beaver',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S7.png`,
                 linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/mammals/beavers',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 56,
+                y: 37.9,
+                angle: -5
             },
             {
                 id: 8,
                 name: 'Invasive Plants',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S8.png`,
                 linkUrl: 'http://www.oars3rivers.org/threats/invasive',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 59,
+                y: 43,
+                angle: 9
             },
             {
                 id: 9,
                 name: 'Black Flies',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S9.png`,
                 linkUrl: 'https://nabfa-blackfly.org/',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 56.4,
+                y: 48,
+                angle: -9
             },
             {
                 id: 10,
                 name: 'River Facts',
                 photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S10.png`,
                 linkUrl: 'http://www.oars3rivers.org/river/sudbury-river-facts',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 59.1,
+                y: 51.5,
+                angle: 10
             }
         ]
     },
@@ -247,81 +247,81 @@ export const rivers = [
                 name: 'Upper Concord Report Card',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C1.png`,
                 linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-concord-river/',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 53.5,
+                y: 54.7,
+                angle: 14
             },
             {
                 id: 2,
                 name: 'Minuteman National Historic Park',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C2.png`,
                 linkUrl: 'https://www.nps.gov/mima/index.htm',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 57.9,
+                y: 58.2,
+                angle: 24
             },
             {
                 id: 3,
                 name: 'The Old Manse',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C3.png`,
                 linkUrl: 'http://www.thetrustees.org/places-to-visit/metro-west/old-manse.html',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 61,
+                y: 68.3,
+                angle: 26
             },
             {
                 id: 4,
                 name: 'October Farm',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C4.png`,
                 linkUrl: 'https://www.concordma.gov/DocumentCenter/View/6956/October-Farm-Riverfront-Trail-Guide',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 56.3,
+                y: 63.3,
+                angle: 13
             },
             {
                 id: 5,
                 name: 'Squaw Sachem Trail',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C5.png`,
                 linkUrl: 'https://www.concordma.gov/DocumentCenter/View/2095/River-Confluence-Trail-Guide',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 58.9,
+                y: 72.7,
+                angle: 19
             },
             {
                 id: 6,
                 name: 'Lower Concord Report Card',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C6.png`,
                 linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/lower-concord-river/',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 64,
+                y: 75.7,
+                angle: 6
             },
             {
                 id: 7,
                 name: 'Concord River Greenway',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C7.png`,
                 linkUrl: 'https://lowelllandtrust.org/concord-river-greenway/',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 61.8,
+                y: 81.1,
+                angle: 23
             },
             {
                 id: 8,
                 name: 'River Facts',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C8.png`,
                 linkUrl: 'http://www.oars3rivers.org/river/concord-river-facts',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 67.8,
+                y: 84.6,
+                angle: 17
             },
             {
                 id: 9,
                 name: 'Watershed Report Card',
                 photoUrl: `${awsUrl}/rivers/concord/bootPrints/C9.png`,
                 linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/',
-                x: 0,
-                y: 0,
-                angle: 0
+                x: 65.3,
+                y: 88.3,
+                angle: 3
             }
         ]
     }
