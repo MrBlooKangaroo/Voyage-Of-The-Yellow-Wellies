@@ -4,8 +4,7 @@ import './styles.css'
 import VideoPlayer from '../../components/VideoPlayer'
 import BootPrint from '../../components/BootPrint'
 import { assets, rivers } from '../../utils/constants'
-const { map } = assets
-const { bootPrints } = rivers[0]
+const { map, guide } = assets
 
 const t = {
     titleVoyage: 'Voyage of the',
@@ -14,17 +13,22 @@ const t = {
 }
 
 const Home = () => (
-    <main className='home'>
+    <main id='home'>
         <h1 id='hdrWellies'>{t.titleWellies}</h1>
         <h2 id='hdrVoyage'>{t.titleVoyage}</h2>
         <h3 id='hdrSubtitle'>{t.subtitle}</h3>
-        {rivers.map(river => <VideoPlayer {...river} key={river.id} />)}
+
+        
+        <img id='guide' src={guide.src} alt={guide.alt} />
         <section id='mapContainer'>
+            {rivers.map(river => <VideoPlayer {...river} key={river.id} />)}
             <img id='map' src={map.src} alt={map.alt} />
-            {bootPrints
-                .slice(0, 2)
-                .map(bootPrint => <BootPrint {...bootPrint} key={bootPrint.id}/>)
-            }
+            {rivers[0].bootPrints.map(bootPrint=>
+                <BootPrint {...bootPrint} key={bootPrint.id}/>
+            )}
+            {rivers[1].bootPrints.slice(0, 3).map(bootPrint=>
+                <BootPrint {...bootPrint} key={bootPrint.id}/>
+            )}
         </section>
     </main>
 )

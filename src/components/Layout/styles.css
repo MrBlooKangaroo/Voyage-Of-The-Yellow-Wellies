@@ -9,3 +9,16 @@
     font-family: 'Rumble Brave';
     src: local('Rumble Brave'), url(../../assets/fonts/rumble-brave.woff) format('woff');
 }
+
+body {
+    margin: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+#layout,
+#home {
+    height: 100%;
+}

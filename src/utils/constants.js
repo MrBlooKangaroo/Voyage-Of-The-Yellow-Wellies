@@ -2,139 +2,327 @@ export const paths = {
     home: '/'
 }
 
-export const bootPrintXY = {
-    assabet: [
-        [],
-
-    ]
-}
+export const awsUrl = 'https://yellow-wellies-production.s3.amazonaws.com'
 
 export const assets = {
     map: {
-        src: 'https://yellow-wellies-production.s3.amazonaws.com/assets/SuAsCoMap.png',
-        alt: 'SuAsCo Map'
-    } 
+        src: `${awsUrl}/assets/SuAsCoMap.png`,
+        alt: 'SuAsCo Map',
+    },
+    guide: {
+        src: `${awsUrl}/assets/SuAsCoMapGuide.png`,
+        alt: 'SuAsCo Map Guide'
+    }
 }
 
 export const rivers = [
     {
         id: 1,
         name: 'Assabet',
-        videoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/videos/AssabetRiver.mp4',
+        videoUrl: `${awsUrl}/rivers/assabet/videos/AssabetRiver.mp4`,
         bootPrints: [
             {
                 id: 1,
                 name: 'Upper Assabet Report Card',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A1.png',
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A1.png`,
                 linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-assabet-river/',
-                x: 7.6,
-                y: 12.9,
-                angle: -9
+                x: 8.4,
+                y: 11.2,
+                angle: -24
             },
             {
                 id: 2,
                 name: 'Assabet Headwaters',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A2.png',
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A2.png`,
                 linkUrl: 'http://www.oars3rivers.org/river/tributaries/assabet-headwaters',
-                x: 16,
-                y: 18,
-                angle: 15
+                x: 11,
+                y: 17.9,
+                angle: 5
             },
             {
                 id: 3,
                 name: 'Osprey',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A3.png',
-                linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/birds/ospreys'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A3.png`,
+                linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/birds/ospreys',
+                x: 8,
+                y: 24.3,
+                angle: 9
             },
             {
                 id: 4,
                 name: 'River Access',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A4.png',
-                linkUrl: 'http://www.oars3rivers.org/river_map/map/1'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A4.png`,
+                linkUrl: 'http://www.oars3rivers.org/river_map/map/1',
+                x: 13,
+                y: 28,
+                angle: 24
             },
             {
                 id: 5,
                 name: 'Brook Trout',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A5.png',
-                linkUrl: 'http://www.oars3rivers.org/our-work/monitoring/river-continuity'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A5.png`,
+                linkUrl: 'http://www.oars3rivers.org/our-work/monitoring/river-continuity',
+                x: 12.2,
+                y: 34.1,
+                angle: 40
             },
             {
                 id: 6,
                 name: 'Lower Assabet Report Card',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A6.png',
-                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/lower-assabet-river/'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A6.png`,
+                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/lower-assabet-river/',
+                x: 18.8,
+                y: 36,
+                angle: 42
             },
             {
                 id: 7,
                 name: 'Great Blue Heron',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A7.png',
-                linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/birds/great-blue-herons'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A7.png`,
+                linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/birds/great-blue-herons',
+                x: 21.5,
+                y: 43.8,
+                angle: 58
             },
             {
                 id: 8,
                 name: 'Trails',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A8.png',
-                linkUrl: 'http://www.oars3rivers.org/our-work/blue-trails'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A8.png`,
+                linkUrl: 'http://www.oars3rivers.org/our-work/blue-trails',
+                x: 27.7,
+                y: 42.6,
+                angle: 65
             },
             {
                 id: 9,
                 name: 'Ben Smith Dam',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A9.png',
-                linkUrl: 'http://www.oars3rivers.org/threats/sediment-dams'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A9.png`,
+                linkUrl: 'http://www.oars3rivers.org/threats/sediment-dams',
+                x: 31,
+                y: 49.4,
+                angle: 64
             },
             {
                 id: 10,
                 name: 'Fish Kill',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A10.png',
-                linkUrl: 'http://www.oars3rivers.org/fishkill-assabet-2013'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A10.png`,
+                linkUrl: 'http://www.oars3rivers.org/fishkill-assabet-2013',
+                x: 38.7,
+                y: 48,
+                angle: 60
             },
             {
                 id: 11,
                 name: 'River Otters',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A11.png',
-                linkUrl: 'https://www.mass.gov/service-details/learn-about-river-otters'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A11.png`,
+                linkUrl: 'https://www.mass.gov/service-details/learn-about-river-otters',
+                x: 41,
+                y: 54.4,
+                angle: 57
             },
             {
                 id: 12,
                 name: 'River Facts',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A12.png',
-                linkUrl: 'http://www.oars3rivers.org/river/assabet-river-facts'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A12.png`,
+                linkUrl: 'http://www.oars3rivers.org/river/assabet-river-facts',
+                x: 48,
+                y: 54,
+                angle: 68
             },
             {
                 id: 13,
                 name: 'Wild & Scenic River Stewardship Council',
-                photoUrl: 'https://yellow-wellies-production.s3.amazonaws.com/rivers/assabet/bootPrints/A13.png',
-                linkUrl: 'http://www.sudbury-assabet-concord.org/'
+                photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A13.png`,
+                linkUrl: 'http://www.sudbury-assabet-concord.org/',
+                x: 50.4,
+                y: 59,
+                angle: 69
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: 'Sudbury',
+        videoUrl: `${awsUrl}/rivers/sudbury/videos/SudburyRiver.mp4`,
+        bootPrints: [
+            {
+                id: 1,
+                name: 'Upper Sudbury Report Card',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S1.png`,
+                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-sudbury-river/',
+                x: 47.7,
+                y: 18,
+                angle: 41
+            },
+            {
+                id: 2,
+                name: 'Lake Sudbury',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S2.png`,
+                linkUrl: 'https://www.walden.org/property/fairhaven-bay/',
+                x: 54.3,
+                y: 21,
+                angle: 41
+            },
+            {
+                id: 3,
+                name: 'Great Meadows National Wildlife Refuge',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S3.png`,
+                linkUrl: 'https://www.fws.gov/refuge/great_meadows/',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 4,
+                name: 'Water Cycle',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S4.png`,
+                linkUrl: 'http://www.oars3rivers.org/river/watercycle',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 5,
+                name: 'Climate Change',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S5.png`,
+                linkUrl: 'http://www.oars3rivers.org/threats/natural-flow',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 6,
+                name: 'Water Pollution',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S6.png`,
+                linkUrl: 'http://www.oars3rivers.org/threats/water-pollution',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 7,
+                name: 'Beaver',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S7.png`,
+                linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/mammals/beavers',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 8,
+                name: 'Invasive Plants',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S8.png`,
+                linkUrl: 'http://www.oars3rivers.org/threats/invasive',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 9,
+                name: 'Black Flies',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S9.png`,
+                linkUrl: 'https://nabfa-blackfly.org/',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 10,
+                name: 'River Facts',
+                photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S10.png`,
+                linkUrl: 'http://www.oars3rivers.org/river/sudbury-river-facts',
+                x: 0,
+                y: 0,
+                angle: 0
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: 'Concord',
+        videoUrl: `${awsUrl}/rivers/concord/videos/ConcordRiver.mp4`,
+        bootPrints: [
+            {
+                id: 1,
+                name: 'Upper Concord Report Card',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C1.png`,
+                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-concord-river/',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 2,
+                name: 'Minuteman National Historic Park',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C2.png`,
+                linkUrl: 'https://www.nps.gov/mima/index.htm',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 3,
+                name: 'The Old Manse',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C3.png`,
+                linkUrl: 'http://www.thetrustees.org/places-to-visit/metro-west/old-manse.html',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 4,
+                name: 'October Farm',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C4.png`,
+                linkUrl: 'https://www.concordma.gov/DocumentCenter/View/6956/October-Farm-Riverfront-Trail-Guide',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 5,
+                name: 'Squaw Sachem Trail',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C5.png`,
+                linkUrl: 'https://www.concordma.gov/DocumentCenter/View/2095/River-Confluence-Trail-Guide',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 6,
+                name: 'Lower Concord Report Card',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C6.png`,
+                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/lower-concord-river/',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 7,
+                name: 'Concord River Greenway',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C7.png`,
+                linkUrl: 'https://lowelllandtrust.org/concord-river-greenway/',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 8,
+                name: 'River Facts',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C8.png`,
+                linkUrl: 'http://www.oars3rivers.org/river/concord-river-facts',
+                x: 0,
+                y: 0,
+                angle: 0
+            },
+            {
+                id: 9,
+                name: 'Watershed Report Card',
+                photoUrl: `${awsUrl}/rivers/concord/bootPrints/C9.png`,
+                linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/',
+                x: 0,
+                y: 0,
+                angle: 0
             }
         ]
     }
 ]
-
-/*
-    so perfect --> thank you for the coordination
-
-    videos --> do you want them with a player or just presentational? 
-        => Or Hosted on vimeo or youtube?
-            --> no controls...
-
-    could you send the faded river svg?
-        --> maybe 
-
-    could/should I make design decisions?
-        --> yes
-
-    do you want to buy a domain / already have one? or free? 
-        --> possibly square 
-
-    interactivity on hover or click?
-        => if  I take the lead, what kind of feel? 
-        (bouncy, gradual/slow, jumpy comic booky idea i had?)
-
-    did you butt dial me?
-        --> no 
-
-    duedate?
-        --> apri; 15
-
-    wtf r yellow wellies?
-*/

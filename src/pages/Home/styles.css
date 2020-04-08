@@ -1,5 +1,6 @@
-.home {
+#home {
     display: flex;
+    background: radial-gradient(circle, rgba(58, 142, 228, 0.22) 0%, rgba(255,255,255,1) 100%);
 }
 
 #hdrVoyage {
@@ -40,7 +41,15 @@
 
 #map {
     height: 95vh;
-    opacity: 0.36;
-    filter: drop-shadow(5px 14px 7px #222) brightness(0.94) saturate(1.6);
+    opacity: 0.48;
+    filter: drop-shadow(5px 14px 7px #222) brightness(1.03) saturate(3);
     z-index: -99;
+}
+
+#guide {
+    bottom: 2rem;
+    position: absolute;
+    width: 250px;
+    left: 2rem;
+    filter: brightness(1.03) saturate(3);
 }
