@@ -12,7 +12,7 @@ const VideoPlayer = ({ name, videoUrl}) =>
             className='player'
             loop
             muted
-            autoPlay
+            // autoPlay
         />
     </div>
 

@@ -1,0 +1,11 @@
+.modal {
+    width: 50vw;
+    height: 50vh;
+    background: white;
+    border-radius: 10%;
+    position: absolute;
+}
+
+.bootPrintSelected {
+    width: 5rem;
+}

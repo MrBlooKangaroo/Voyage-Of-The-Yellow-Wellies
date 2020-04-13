@@ -1,6 +1,6 @@
 .playerContainer {
     position: absolute;
-    width: 210px;
+    width: 14rem;
     border-radius: 12%;
     border: solid 1px #f1c627;
     overflow: hidden;
@@ -13,14 +13,14 @@
 }
 
 .sudburyVideo {
-    right: -16vh;
-    bottom: 10vh;
+    right: -24vh;
+    bottom: 32vh;
 }
 
 .concordVideo {
-    right: -22vh;
-    top: 7vh;
-    width: 110px;
+    right: -36vh;
+    top: -4vh;
+    width: 7.8rem;
     transform: rotate(-90deg);
     box-shadow: -2px 3px 2px #887736, -5px 12px 13px #e6be277a;
 }

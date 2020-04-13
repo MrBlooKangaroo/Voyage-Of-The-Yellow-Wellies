@@ -1,5 +1,17 @@
 .bootPrint {
-    width: 3vh;
+    width: 2.7vh;
     position: absolute;
     transition-duration: 400ms;
+}
+    .bootPrint:active::after {
+        animation: 1s spin ease-in-out;
+    }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1080deg);
+    }
 }
