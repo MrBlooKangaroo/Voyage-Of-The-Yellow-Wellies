@@ -16,7 +16,7 @@ const t = {
 
 const Home = () => {
     const [selectedBootPrintId, setSelectedBootPrintId] = useState(null)
-    const selectedBootPrint = bootPrints[0] //.find(({id}) => id === selectedBootPrintId)
+    const selectedBootPrint = bootPrints.find(({id}) => id === selectedBootPrintId)
     return (
         <main id='home'>
             <h1 id='hdrWellies'>{t.titleWellies}</h1>
@@ -26,15 +26,15 @@ const Home = () => {
             <section id='mapContainer'>
                 <img id='map' src={map.src} alt={map.alt} />
                 {/* {rivers.map(river => <VideoPlayer {...river} key={river.id} />)} */}
-                {/* {bootPrints.map(bootPrint => 
+                {bootPrints.map(bootPrint => 
                     <BootPrint 
                         key={bootPrint.id}
                         setSelectedBootPrintId={setSelectedBootPrintId}
                         {...bootPrint} 
                     />
-                )} */}
+                )}
             </section>
-            <Spotlight {...selectedBootPrint} setSelectedBootPrintId={setSelectedBootPrintId} />
+            <Spotlight {...selectedBootPrint} selectedBootPrintId={selectedBootPrintId} setSelectedBootPrintId={setSelectedBootPrintId}/>
             {/* {selectedBootPrintId && 
                 <Modal {...selectedBootPrint} 
                     setSelectedBootPrintId={setSelectedBootPrintId} 

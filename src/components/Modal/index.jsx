@@ -1,10 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
+import { faSearchMinus } from '@fortawesome/free-solid-svg-icons'
 import './styles.css'
 
-export default ({ photoUrl, setSelectedBootPrintId }) => {
-    return ( 
+export default ({ photoUrl, setIsFullScreen }) => {
+    return <>
+        <div id='shadow' />
         <div className='modal'>   
             <img 
                 src={photoUrl} 
@@ -12,10 +13,10 @@ export default ({ photoUrl, setSelectedBootPrintId }) => {
                 className='bootPrintSelected' 
             />
             <FontAwesomeIcon 
-                className='close' 
-                icon={faWindowClose} 
-                onClick={() => setSelectedBootPrintId(null)}
+                id='modalClose' 
+                icon={faSearchMinus} 
+                onClick={() => setIsFullScreen(false)}
             />
         </div>
-    )
+    </>
 }

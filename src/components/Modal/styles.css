@@ -1,11 +1,48 @@
 .modal {
-    width: 50vw;
     height: 50vh;
     background: white;
-    border-radius: 10%;
+    left: -75vw;
+    top: -5vh;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    transition-duration: 500ms;
+    justify-content: center;
+    border: 1px solid #f1c627;
+    border-radius: 1rem;
     position: absolute;
-}
+    right: 3.7vw;
+    box-shadow: inset 0px 0px 10px #887735;
+}   
 
 .bootPrintSelected {
-    width: 5rem;
+    width: 36%;
+    transform: rotate(-90deg);
+}
+
+#modalClose {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 2.8rem;
+    color: #887735;
+}
+#modalClose:hover {
+    color: #f1c626;
+    cursor: pointer;
+}
+#modalClose:active {
+    transform: scale(0.9);
+}
+
+#shadow {
+    width: 121vw;
+    height: 171vh;
+    z-index: 97;
+    background: #000000cf;
+    position: absolute;
+    top: -100vh;
+    left: -100vw;
 }

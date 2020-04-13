@@ -3,8 +3,15 @@
     position: absolute;
     transition-duration: 400ms;
 }
-    .bootPrint:active::after {
+    .bootPrint:hover {
+        cursor: pointer;
+    }
+    .bootPrint:active {
         animation: 1s spin ease-in-out;
+        transform: scale(0.9);
+    }
+    .bootPrint:active::after {
+
     }
 
 @keyframes spin {
