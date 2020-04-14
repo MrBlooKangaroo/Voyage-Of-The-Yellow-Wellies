@@ -36,7 +36,14 @@ export const assets = {
     audio: {
         bootClick: `${awsUrl}/assets/bootClick.wav`,
         bootHover: `${awsUrl}/assets/bootHover.mp3`,
-        river: `${awsUrl}/assets/river.wav`
+        close: `${awsUrl}/assets/close.wav`,
+        explore: `${awsUrl}/assets/explore.wav`,
+        toggle: `${awsUrl}/assets/toggle.wav`,
+        zoomIn: `${awsUrl}/assets/zoomIn.wav`,
+        zoomOut: `${awsUrl}/assets/zoomOut.wav`,
+        umbrella: `${awsUrl}/assets/umbrella.wav`,
+        council: `${awsUrl}/assets/council.wav`,
+        river: `${awsUrl}/assets/river.mp3`
     }
 }
 

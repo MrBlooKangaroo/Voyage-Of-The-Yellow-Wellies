@@ -1,7 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchMinus } from '@fortawesome/free-solid-svg-icons'
+import { assets } from '../../utils/constants'
 import './styles.css'
+
+const zoomOutSFX = new Audio(assets.audio.zoomOut)
 
 export default ({ photoUrl, setIsFullScreen }) => {
     return <>
@@ -15,7 +18,10 @@ export default ({ photoUrl, setIsFullScreen }) => {
             <FontAwesomeIcon 
                 id='modalClose' 
                 icon={faSearchMinus} 
-                onClick={() => setIsFullScreen(false)}
+                onClick={() => {
+                    setIsFullScreen(false)
+                    zoomOutSFX.play()
+                }}
             />
         </div>
     </>

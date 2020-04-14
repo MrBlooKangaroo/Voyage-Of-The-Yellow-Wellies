@@ -15,6 +15,8 @@ const t = {
 }
 
 const soundScapeSFX = new Audio(audio.river)
+const umbrellaSFX = new Audio(audio.umbrella)
+const councilSFX = new Audio(audio.council)
 
 const Home = () => {
     const [isSFXOn, toggleIsSFXOn] = useState(true)
@@ -38,6 +40,7 @@ const Home = () => {
                     href={ekphrasis.linkUrl}
                     target='_blank' 
                     rel="noopener noreferrer"
+                    onClick={() => councilSFX.play()}
                 >{ekphrasis.link}</a>
                 {ekphrasis.end}
             </section>
@@ -66,8 +69,13 @@ const Home = () => {
                 href={ekphrasis.linkUrl}
                 target='_blank' 
                 rel="noopener noreferrer"
+                onClick={() => umbrellaSFX.play()}
             >
-                <img id='umbrella' src={umbrella.src} alt={umbrella.alt} />
+                <img 
+                    id='umbrella' 
+                    src={umbrella.src} 
+                    alt={umbrella.alt} 
+                />
             </a>
         </main>
     )

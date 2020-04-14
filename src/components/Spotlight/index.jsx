@@ -5,7 +5,7 @@ import { assets } from '../../utils/constants';
 import Modal from '../Modal';
 import './styles.css'
 
-const { binoculars, arrows } = assets
+const { binoculars, arrows, audio } = assets
 
 const t = {
     goTo1: 'Click',
@@ -13,6 +13,10 @@ const t = {
     goTo3: 'Explore',
     prompt: 'Click on a boot print to investigate'
 }
+
+const closeSFX = new Audio(audio.close)
+const zoomInSFX = new Audio(audio.zoomIn)
+const exploreSFX = new Audio(audio.explore)
 
 export default ({ name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootPrintId }) => {
     const [isFullScreen, setIsFullScreen] = useState(false)
@@ -40,17 +44,24 @@ export default ({ name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootP
                         <FontAwesomeIcon 
                             id='spotlightIcon' 
                             icon={faHiking}
+                            onClick={() => exploreSFX.play() }
                         />
                     </a>
                     <FontAwesomeIcon 
                         id='spotlightFullScreen' 
                         icon={faSearchPlus} 
-                        onClick={() => setIsFullScreen(!isFullScreen)}
+                        onClick={() => {
+                            setIsFullScreen(!isFullScreen)
+                            zoomInSFX.play()
+                        }}
                     />
                     <FontAwesomeIcon 
                         id='spotlightClose' 
                         icon={faWindowClose} 
-                        onClick={() => setSelectedBootPrintId(null)}
+                        onClick={() => {
+                            setSelectedBootPrintId(null)
+                            closeSFX.play()
+                        }}
                     />
                 </>
             ) : (
