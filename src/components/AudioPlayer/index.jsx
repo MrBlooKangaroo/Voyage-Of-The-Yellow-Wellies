@@ -22,7 +22,7 @@ export default ({
                 isSFXOn ? 'on' : 'off'
             } onClick={() => {
                 toggleIsSFXOn(!isSFXOn)
-                toggleSFX.play()
+                isSFXOn && toggleSFX.play()
             }}>{
                 isSFXOn ? 'SFX On' : 'SFX Off'
             }</button>
@@ -30,7 +30,7 @@ export default ({
                 isSoundScapeOn ? 'on' : 'off'
             } onClick={() => {
                 toggleIsSoundScapeOn(!isSoundScapeOn)
-                toggleSFX.play()
+                isSFXOn && toggleSFX.play()
             }}>{
                 isSoundScapeOn ? 'River On' : 'River Off'
             }</button>

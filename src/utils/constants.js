@@ -14,7 +14,7 @@ export const assets = {
         alt: 'SuAsCo Map',
     },
     guide: {
-        src: `${awsUrl}/assets/SuAsCoMapGuide.png`,
+        src: `${awsUrl}/assets/guide.png`,
         alt: 'SuAsCo Map Guide'
     },
     arrows: {

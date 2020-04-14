@@ -18,7 +18,7 @@ const closeSFX = new Audio(audio.close)
 const zoomInSFX = new Audio(audio.zoomIn)
 const exploreSFX = new Audio(audio.explore)
 
-export default ({ name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootPrintId }) => {
+export default ({ name, photoUrl, linkUrl, isSFXOn, selectedBootPrintId, setSelectedBootPrintId }) => {
     const [isFullScreen, setIsFullScreen] = useState(false)
     return ( 
         <section id='spotlight' style={{
@@ -44,7 +44,7 @@ export default ({ name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootP
                         <FontAwesomeIcon 
                             id='spotlightIcon' 
                             icon={faHiking}
-                            onClick={() => exploreSFX.play() }
+                            onClick={() => isSFXOn && exploreSFX.play() }
                         />
                     </a>
                     <FontAwesomeIcon 
@@ -52,7 +52,7 @@ export default ({ name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootP
                         icon={faSearchPlus} 
                         onClick={() => {
                             setIsFullScreen(!isFullScreen)
-                            zoomInSFX.play()
+                            isSFXOn && zoomInSFX.play()
                         }}
                     />
                     <FontAwesomeIcon 
@@ -60,14 +60,20 @@ export default ({ name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootP
                         icon={faWindowClose} 
                         onClick={() => {
                             setSelectedBootPrintId(null)
-                            closeSFX.play()
+                            isSFXOn && closeSFX.play()
                         }}
                     />
                 </>
             ) : (
                 <span id='spotlightPrompt'>{t.prompt}</span>
             )}
-            {isFullScreen && <Modal photoUrl={photoUrl} setIsFullScreen={setIsFullScreen} />}
+            {isFullScreen && 
+                <Modal 
+                    photoUrl={photoUrl} 
+                    isSFXOn={isSFXOn}
+                    setIsFullScreen={setIsFullScreen} 
+                />
+            }
         </section>
     )
 }

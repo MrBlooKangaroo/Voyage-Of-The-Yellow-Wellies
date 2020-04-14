@@ -40,7 +40,7 @@ const Home = () => {
                     href={ekphrasis.linkUrl}
                     target='_blank' 
                     rel="noopener noreferrer"
-                    onClick={() => councilSFX.play()}
+                    onClick={() => isSFXOn && councilSFX.play()}
                 >{ekphrasis.link}</a>
                 {ekphrasis.end}
             </section>
@@ -63,13 +63,18 @@ const Home = () => {
                 isSFXOn={isSFXOn} toggleIsSFXOn={toggleIsSFXOn} 
                 isSoundScapeOn={isSoundScapeOn} toggleIsSoundScapeOn={toggleIsSoundScapeOn} 
             />
-            <Spotlight {...selectedBootPrint} selectedBootPrintId={selectedBootPrintId} setSelectedBootPrintId={setSelectedBootPrintId}/>
+            <Spotlight 
+                isSFXOn={isSFXOn} 
+                selectedBootPrintId={selectedBootPrintId} 
+                setSelectedBootPrintId={setSelectedBootPrintId}
+                {...selectedBootPrint} 
+            />
             <a 
                 id='ekphrasisLink' 
                 href={umbrella.linkUrl}
                 target='_blank' 
                 rel="noopener noreferrer"
-                onClick={() => umbrellaSFX.play()}
+                onClick={() => isSFXOn && umbrellaSFX.play()}
             >
                 <img 
                     id='umbrella' 

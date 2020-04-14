@@ -76,9 +76,9 @@
 }
 
 #guide {
-    bottom: 0rem;
+    bottom: 1.5rem;
     position: absolute;
-    width: 224px;
+    width: 13.8rem;
     left: 1.5rem;
     filter: brightness(1.03) saturate(3);
 }

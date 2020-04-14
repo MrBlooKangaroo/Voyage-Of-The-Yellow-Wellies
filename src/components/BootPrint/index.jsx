@@ -11,11 +11,11 @@ const BootPrint = ({ id, name, photoUrl, setSelectedBootPrintId, selectedBootPri
     const [isHovering, setIsHovering] = useState(false)
     const isFlipped = [26, 27].includes(id)
     const onBootPrintClick = () => {
-        if (isSFXOn) bootClickSFX.play()
+        isSFXOn && bootClickSFX.play()
         setSelectedBootPrintId(id)
     }
     const onBootPrintHover = () => {
-        if (isSFXOn) bootHoverSFX.play()
+        isSFXOn && bootHoverSFX.play()
         setIsHovering(true)
     }
     return ( 

@@ -6,7 +6,7 @@ import './styles.css'
 
 const zoomOutSFX = new Audio(assets.audio.zoomOut)
 
-export default ({ photoUrl, setIsFullScreen }) => {
+export default ({ photoUrl, setIsFullScreen, isSFXOn }) => {
     return <>
         <div id='shadow' />
         <div className='modal'>   
@@ -20,7 +20,7 @@ export default ({ photoUrl, setIsFullScreen }) => {
                 icon={faSearchMinus} 
                 onClick={() => {
                     setIsFullScreen(false)
-                    zoomOutSFX.play()
+                    isSFXOn && zoomOutSFX.play()
                 }}
             />
         </div>
