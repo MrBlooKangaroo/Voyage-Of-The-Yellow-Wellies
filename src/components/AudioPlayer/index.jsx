@@ -5,9 +5,7 @@ import './styles.css'
 const { phonograph, audio } = assets
 
 const t = {
-    title: 'Audio Settings',
-    SFX: 'Sound FX',
-    soundscape: 'Soundscape'
+    title: 'Sound',
 }
 
 const toggleSFX = new Audio(audio.toggle)

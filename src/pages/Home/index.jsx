@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './styles.css'
 
-// import VideoPlayer from '../../components/VideoPlayer'
+import VideoPlayer from '../../components/VideoPlayer'
 import BootPrint from '../../components/BootPrint'
-import { assets, bootPrints, ekphrasis } from '../../utils/constants'
+import { rivers, assets, bootPrints, ekphrasis } from '../../utils/constants'
 import Spotlight from '../../components/Spotlight';
 import AudioPlayer from '../../components/AudioPlayer';
 const { map, guide, wellies, umbrella, audio } = assets
@@ -48,7 +48,7 @@ const Home = () => {
             <img id='guide' src={guide.src} alt={guide.alt} />
             <section id='mapContainer'>
                 <img id='map' src={map.src} alt={map.alt} />
-                {/* {rivers.slice(0, 1).map(river => <VideoPlayer {...river} key={river.id} />)} */}
+                {rivers.map(river => <VideoPlayer {...river} key={river.id} />)}
                 {bootPrints.map(bootPrint => 
                     <BootPrint 
                         key={bootPrint.id}

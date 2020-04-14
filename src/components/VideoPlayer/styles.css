@@ -1,20 +1,20 @@
 .playerContainer {
     position: absolute;
-    width: 14rem;
+    width: 9rem;
     border-radius: 12%;
     border: solid 1px #f1c627;
     overflow: hidden;
-    box-shadow: 2px 3px 2px #887736, 5px 12px 13px #e6be277a;
+    box-shadow: 2px 3px 2px #887736, 5px 5px 13px #e6be277a;
 }
 
 .assabetVideo {
-    left: -13vh;
-    bottom: 54vh;
+    left: 7.1vh;
+    top: 24.9vh;
 }
 
 .sudburyVideo {
-    right: -24vh;
-    bottom: 32vh;
+    right: 10.2vh;
+    bottom: 1.3vh;
 }
 
 .concordVideo {
