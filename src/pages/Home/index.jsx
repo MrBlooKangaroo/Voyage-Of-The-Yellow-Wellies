@@ -19,7 +19,7 @@ const umbrellaSFX = new Audio(audio.umbrella)
 const councilSFX = new Audio(audio.council)
 
 const Home = () => {
-    const [isSFXOn, toggleIsSFXOn] = useState(true)
+    const [isSFXOn, toggleIsSFXOn] = useState(false)
     const [isSoundScapeOn, toggleIsSoundScapeOn] = useState(false)
     const [selectedBootPrintId, setSelectedBootPrintId] = useState(null)
     const selectedBootPrint = bootPrints.find(({id}) => id === selectedBootPrintId)
