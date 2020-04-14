@@ -1,12 +1,8 @@
-import React, { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCogs } from '@fortawesome/free-solid-svg-icons'
+import React from 'react'
+import { assets } from '../../utils/constants';
 import './styles.css'
-import { camelize } from '../../utils/common';
-import BootPrint from '../BootPrint';
-import { assets, bootPrints } from '../../utils/constants';
-import Modal from '../Modal';
-const { phonograph, audio } = assets
+
+const { phonograph } = assets
 
 const t = {
     title: 'Audio Settings',

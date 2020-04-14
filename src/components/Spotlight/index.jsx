@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHiking, faWindowClose, faSearchPlus } from '@fortawesome/free-solid-svg-icons'
-import './styles.css'
-import { camelize } from '../../utils/common';
-import BootPrint from '../BootPrint';
-import { assets, bootPrints } from '../../utils/constants';
+import { assets } from '../../utils/constants';
 import Modal from '../Modal';
+import './styles.css'
+
 const { binoculars, arrows } = assets
 
 const t = {
@@ -15,7 +14,7 @@ const t = {
     prompt: 'Click on a boot print to investigate'
 }
 
-export default ({ id, name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootPrintId }) => {
+export default ({ name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootPrintId }) => {
     const [isFullScreen, setIsFullScreen] = useState(false)
     return ( 
         <section id='spotlight' style={{

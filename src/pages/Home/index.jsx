@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import './styles.css'
 
-import VideoPlayer from '../../components/VideoPlayer'
+// import VideoPlayer from '../../components/VideoPlayer'
 import BootPrint from '../../components/BootPrint'
-import Modal from '../../components/Modal'
-import { assets, bootPrints, rivers, ekphrasis } from '../../utils/constants'
+import { assets, bootPrints, ekphrasis } from '../../utils/constants'
 import Spotlight from '../../components/Spotlight';
 import AudioPlayer from '../../components/AudioPlayer';
 const { map, guide, wellies, umbrella, audio } = assets
@@ -62,11 +61,6 @@ const Home = () => {
                 isSoundScapeOn={isSoundScapeOn} toggleIsSoundScapeOn={toggleIsSoundScapeOn} 
             />
             <Spotlight {...selectedBootPrint} selectedBootPrintId={selectedBootPrintId} setSelectedBootPrintId={setSelectedBootPrintId}/>
-            {/* {selectedBootPrintId && 
-                <Modal {...selectedBootPrint} 
-                    setSelectedBootPrintId={setSelectedBootPrintId} 
-                />
-            } */}
             <a 
                 id='ekphrasisLink' 
                 href={ekphrasis.linkUrl}

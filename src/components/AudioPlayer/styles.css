@@ -72,22 +72,6 @@
     box-shadow: inset 2px 3px 5px #735249;
 }
 
-.audioName {
-
-}
-
-.audioToggle {
-
-}
-
-.audioToggle.on {
-
-}
-
-.audioToggle.off {
-
-}
-
 @keyframes fade-in {
     from {
       opacity: 0;
