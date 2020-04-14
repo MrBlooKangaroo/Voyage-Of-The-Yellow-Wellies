@@ -4,9 +4,10 @@ import './styles.css'
 import VideoPlayer from '../../components/VideoPlayer'
 import BootPrint from '../../components/BootPrint'
 import Modal from '../../components/Modal'
-import { assets, bootPrints, rivers } from '../../utils/constants'
+import { assets, bootPrints, rivers, ekphrasis } from '../../utils/constants'
 import Spotlight from '../../components/Spotlight';
-const { map, guide } = assets
+import AudioPlayer from '../../components/AudioPlayer';
+const { map, guide, wellies, umbrella, audio } = assets
 
 const t = {
     titleVoyage: 'Voyage of the',
@@ -14,32 +15,66 @@ const t = {
     subtitle: '(An Exploration of the SuAsCo Watershed)'
 }
 
+const soundScapeSFX = new Audio(audio.river)
+
 const Home = () => {
+    const [isSFXOn, toggleIsSFXOn] = useState(true)
+    const [isSoundScapeOn, toggleIsSoundScapeOn] = useState(false)
     const [selectedBootPrintId, setSelectedBootPrintId] = useState(null)
     const selectedBootPrint = bootPrints.find(({id}) => id === selectedBootPrintId)
+    isSoundScapeOn ? soundScapeSFX.play() : soundScapeSFX.pause()
     return (
         <main id='home'>
             <h1 id='hdrWellies'>{t.titleWellies}</h1>
             <h2 id='hdrVoyage'>{t.titleVoyage}</h2>
             <h3 id='hdrSubtitle'>{t.subtitle}</h3>
+            <img id='wellies' src={wellies.src} alt={wellies.alt} />
+
+            <section id='ekphrasis'>
+                {ekphrasis.beginning1}
+                <br/><br/>
+                {ekphrasis.beginning2}
+                <a 
+                    id='ekphrasisLink' 
+                    href={ekphrasis.linkUrl}
+                    target='_blank' 
+                    rel="noopener noreferrer"
+                >{ekphrasis.link}</a>
+                {ekphrasis.end}
+            </section>
+
             <img id='guide' src={guide.src} alt={guide.alt} />
             <section id='mapContainer'>
                 <img id='map' src={map.src} alt={map.alt} />
-                {/* {rivers.map(river => <VideoPlayer {...river} key={river.id} />)} */}
+                {/* {rivers.slice(0, 1).map(river => <VideoPlayer {...river} key={river.id} />)} */}
                 {bootPrints.map(bootPrint => 
                     <BootPrint 
                         key={bootPrint.id}
+                        selectedBootPrintId={selectedBootPrintId}
                         setSelectedBootPrintId={setSelectedBootPrintId}
+                        isSFXOn={isSFXOn}
                         {...bootPrint} 
                     />
                 )}
             </section>
+            <AudioPlayer 
+                isSFXOn={isSFXOn} toggleIsSFXOn={toggleIsSFXOn} 
+                isSoundScapeOn={isSoundScapeOn} toggleIsSoundScapeOn={toggleIsSoundScapeOn} 
+            />
             <Spotlight {...selectedBootPrint} selectedBootPrintId={selectedBootPrintId} setSelectedBootPrintId={setSelectedBootPrintId}/>
             {/* {selectedBootPrintId && 
                 <Modal {...selectedBootPrint} 
                     setSelectedBootPrintId={setSelectedBootPrintId} 
                 />
             } */}
+            <a 
+                id='ekphrasisLink' 
+                href={ekphrasis.linkUrl}
+                target='_blank' 
+                rel="noopener noreferrer"
+            >
+                <img id='umbrella' src={umbrella.src} alt={umbrella.alt} />
+            </a>
         </main>
     )
 }

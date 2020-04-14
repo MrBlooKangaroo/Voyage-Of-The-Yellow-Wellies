@@ -19,7 +19,7 @@
 
 .bootPrintSelected {
     width: 36%;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 
 #modalClose {

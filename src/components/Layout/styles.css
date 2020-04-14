@@ -10,6 +10,27 @@
     src: local('Rumble Brave'), url(../../assets/fonts/rumble-brave.woff) format('woff');
 }
 
+@font-face {
+    font-family: 'Kayak Sans';
+    src: local('Kayak Sans'), url(../../assets/fonts/kayak-sans-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Cubano';
+    src: local('Cubano'), url(../../assets/fonts/cubano-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Grotesque';
+    src: local('Grotesque'), url(../../assets/fonts/brandon-grotesque.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'Caveat';
+    src: local('Caveat'), url(../../assets/fonts/caveat-regular.woff) format('woff');
+}
+
 body {
     margin: 0;
 }

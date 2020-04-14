@@ -58,20 +58,22 @@
 .goToText {
     position: absolute;
     color: #4f472b;
+    font-family: 'Kayak Sans';
 }
 
 #spotlightGoTo1 {
     font-size: 0.9rem;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    left: 21%;
-    letter-spacing: -0.3rem;
-    bottom: 2.3rem;
+    left: 22%;
+    letter-spacing: -0.2rem;
+    bottom: 2.4rem;
     animation: fade-in 1.5s ease-in-out;
 }
 
 #spotlightGoTo2 {
     left: 26%;
+    font-size: 1.1rem;
     transform: rotate(45deg);
     bottom: 1rem;
     letter-spacing: 0.1rem;
@@ -79,8 +81,8 @@
 }
 
 #spotlightGoTo3 {
-    left: 34%;
-    bottom: 0.7rem;
+    left: 35.5%;
+    bottom: 0.78rem;
     letter-spacing: 0.1rem;
     animation: fade-in 4s ease-in;
 }
@@ -118,8 +120,9 @@
 }
 
 #spotlightPrompt {
-    font-size: 1.5rem;
-    font-family: 'Andes';
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Kayak Sans';
     color: #887735;
 }
 

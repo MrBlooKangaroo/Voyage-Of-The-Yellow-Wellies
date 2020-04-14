@@ -5,6 +5,10 @@ export const paths = {
 export const awsUrl = 'https://yellow-wellies-production.s3.amazonaws.com'
 
 export const assets = {
+    wellies: {
+        src: `${awsUrl}/assets/yellowWellies.png`,
+        alt: 'Yellow Wellies'
+    },
     map: {
         src: `${awsUrl}/assets/SuAsCoMap.png`,
         alt: 'SuAsCo Map',
@@ -20,6 +24,19 @@ export const assets = {
     binoculars: {
         src: `${awsUrl}/assets/binoculars.png`,
         alt: 'Binoculars'
+    },
+    phonograph: {
+        src: `${awsUrl}/assets/phonograph.png`,
+        alt: 'Phonograph'
+    },
+    umbrella: {
+        src: `${awsUrl}/assets/umbrellaLogo.jpg`,
+        alt: 'The Umbrella Arts Center'
+    },
+    audio: {
+        bootClick: `${awsUrl}/assets/bootClick.wav`,
+        bootHover: `${awsUrl}/assets/bootHover.mp3`,
+        river: `${awsUrl}/assets/river.wav`
     }
 }
 
@@ -363,3 +380,11 @@ export const bootPrints = [
         angle: 3
     }
 ]
+
+export const ekphrasis = {
+    beginning1: 'The Voyage of the Yellow Wellies is a personal journey of river exploration that encourages participation by putting viewers into a canoe with three different canoeists. Explore the rivers by seeing looking at the scenery and clicking through the bootprints left behind by the yellow wellies. The Voyage of the Yellow Wellies also asks you to consider your own ecological footprint. Each boot print links to a resource or activity to help you develop as a river steward. The Assabet, Sudbury, and Concord Rivers are vital to our communities; how will we enjoy and preserve them?',
+    beginning2: 'Special thanks to our project sponsor, the ',
+    link: 'River Stewardship Council',
+    linkUrl: 'https://www.sudbury-assabet-concord.org/',
+    end: ', as well as OARS for their online resources, Julia Khorana for her photos and canoe prowess, Dave Witherbee for his photos and local history, Phoebe Clarkson for her canoe ability and tough riddles, the team at the Umbrella Center for the Arts for making this installation go digital, and Corey Angelus for making it look good.'
+}

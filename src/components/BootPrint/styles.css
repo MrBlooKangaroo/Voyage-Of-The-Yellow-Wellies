@@ -1,24 +1,43 @@
 .bootPrint {
     width: 2.7vh;
     position: absolute;
-    transition-duration: 400ms;
+    transition-duration: 300ms;
 }
     .bootPrint:hover {
         cursor: pointer;
     }
     .bootPrint:active {
-        animation: 1s spin ease-in-out;
         transform: scale(0.9);
     }
-    .bootPrint:active::after {
 
-    }
+.bootPrint.selected {
+    animation: 1s blink ease-in-out infinite;
+}
 
-@keyframes spin {
+#bootPrintContainer:hover {
+    animation: 300ms 600ms shake ease-in infinite;
+}
+
+@keyframes shake {
     from {
-        transform: rotate(0deg);
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.01);
     }
     to {
-        transform: rotate(1080deg);
+        transform: scale(1);
+    }
+}
+
+@keyframes blink {
+    from {
+        filter: none;
+    }
+    50% {
+        filter: brightness(2) drop-shadow(0px 2px 1px #f1c627) saturate(1.6);
+    }
+    to {
+        filter: none;
     }
 }

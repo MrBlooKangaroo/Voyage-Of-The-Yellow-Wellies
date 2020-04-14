@@ -12,15 +12,15 @@ const t = {
     goTo1: 'Click',
     goTo2: 'to',
     goTo3: 'Explore',
-    prompt: 'Click a boot print to explore'
+    prompt: 'Click on a boot print to investigate'
 }
 
 export default ({ id, name, photoUrl, linkUrl, selectedBootPrintId, setSelectedBootPrintId }) => {
     const [isFullScreen, setIsFullScreen] = useState(false)
     return ( 
         <section id='spotlight' style={{
-            height: selectedBootPrintId ? '26rem' : '5rem',
-            bottom: selectedBootPrintId ? '8rem' : '29rem'
+            height: selectedBootPrintId ? '26rem' : '4.7rem',
+            bottom: selectedBootPrintId ? '6rem' : '27.3rem'
         }}>
             <img id='spotlightBinoculars' src={binoculars.src} alt={binoculars.alt} />
             {selectedBootPrintId ? (
