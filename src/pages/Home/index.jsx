@@ -66,7 +66,7 @@ const Home = () => {
             <Spotlight {...selectedBootPrint} selectedBootPrintId={selectedBootPrintId} setSelectedBootPrintId={setSelectedBootPrintId}/>
             <a 
                 id='ekphrasisLink' 
-                href={ekphrasis.linkUrl}
+                href={umbrella.linkUrl}
                 target='_blank' 
                 rel="noopener noreferrer"
                 onClick={() => umbrellaSFX.play()}

@@ -31,7 +31,8 @@ export const assets = {
     },
     umbrella: {
         src: `${awsUrl}/assets/umbrellaLogo.jpg`,
-        alt: 'The Umbrella Arts Center'
+        alt: 'The Umbrella Arts Center',
+        linkUrl: 'https://theumbrellaarts.org/'
     },
     audio: {
         bootClick: `${awsUrl}/assets/bootClick.wav`,
