@@ -21,16 +21,12 @@ export const assets = {
         src: `${awsUrl}/assets/arrows.png`,
         alt: 'Arrows Pointing Right'
     },
-    binoculars: {
-        src: `${awsUrl}/assets/binoculars.png`,
-        alt: 'Binoculars'
-    },
-    phonograph: {
-        src: `${awsUrl}/assets/phonograph.png`,
-        alt: 'Phonograph'
+    duck: {
+        src: `${awsUrl}/assets/duck.png`,
+        alt: 'Duck'
     },
     umbrella: {
-        src: `${awsUrl}/assets/umbrellaLogo.jpg`,
+        src: `${awsUrl}/assets/umbrellaLogo.png`,
         alt: 'The Umbrella Arts Center',
         linkUrl: 'https://theumbrellaarts.org/'
     },
@@ -44,7 +40,8 @@ export const assets = {
         zoomOut: `${awsUrl}/assets/zoomOut.wav`,
         umbrella: `${awsUrl}/assets/umbrella.wav`,
         council: `${awsUrl}/assets/council.wav`,
-        river: `${awsUrl}/assets/river.mp3`
+        river: `${awsUrl}/assets/river.mp3`,
+        quack: `${awsUrl}/assets/quack.wav`
     }
 }
 

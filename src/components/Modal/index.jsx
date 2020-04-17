@@ -6,23 +6,24 @@ import './styles.css'
 
 const zoomOutSFX = new Audio(assets.audio.zoomOut)
 
-export default ({ photoUrl, setIsFullScreen, isSFXOn }) => {
-    return <>
-        <div id='shadow' />
-        <div className='modal'>   
-            <img 
-                src={photoUrl} 
-                alt='bootprint' 
-                className='bootPrintSelected' 
-            />
-            <FontAwesomeIcon 
-                id='modalClose' 
-                icon={faSearchMinus} 
-                onClick={() => {
-                    setIsFullScreen(false)
-                    isSFXOn && zoomOutSFX.play()
-                }}
-            />
-        </div>
-    </>
-}
+export default ({ id, photoUrl, setIsFullScreen, isSFXOn }) => 
+    <div className='modal'>   
+        <img 
+            src={photoUrl} 
+            alt='bootprint' 
+            className='bootPrintSelected' 
+            style={{
+                transform: `scaleX(${
+                    [26, 27].includes(id) ? '-1' : '1'
+                })`
+            }}
+        />
+        <FontAwesomeIcon 
+            id='modalClose' 
+            icon={faSearchMinus} 
+            onClick={() => {
+                setIsFullScreen(false)
+                isSFXOn && zoomOutSFX.play()
+            }}
+        />
+    </div>

@@ -2,13 +2,14 @@ import React from 'react'
 import { assets } from '../../utils/constants';
 import './styles.css'
 
-const { phonograph, audio } = assets
+const { duck, audio } = assets
 
 const t = {
-    title: 'Sound',
+    title: 'Sound Settings',
 }
 
 const toggleSFX = new Audio(audio.toggle)
+const quackSFX = new Audio(audio.quack)
 
 export default ({ 
     isSFXOn, toggleIsSFXOn, 
@@ -17,15 +18,23 @@ export default ({
     return ( 
         <section id='audioPlayer'>
             <h2 id='audioTitle'>{t.title}</h2>
-            <img id='audioIcon' src={phonograph.src} alt={phonograph.alt} />
+
+            <img 
+                id='audioIcon' 
+                src={duck.src} 
+                alt={duck.alt} 
+                onClick={() => isSFXOn && quackSFX.play()}
+            />
+
             <button id='sfxButton' className={
                 isSFXOn ? 'on' : 'off'
             } onClick={() => {
                 toggleIsSFXOn(!isSFXOn)
                 isSFXOn && toggleSFX.play()
             }}>{
-                isSFXOn ? 'SFX On' : 'SFX Off'
+                isSFXOn ? 'FX On' : 'FX Off'
             }</button>
+            
             <button id='soundScapeButton' className={
                 isSoundScapeOn ? 'on' : 'off'
             } onClick={() => {

@@ -1,6 +1,6 @@
 .playerContainer {
     position: absolute;
-    width: 9rem;
+    width: 14vw;
     border-radius: 12%;
     border: solid 1px #f1c627;
     overflow: hidden;
@@ -8,21 +8,20 @@
 }
 
 .assabetVideo {
-    left: 7.1vh;
-    top: 24.9vh;
+    left: 11%;
+    top: 10vh;
 }
 
 .sudburyVideo {
-    right: 10.2vh;
-    bottom: 1.3vh;
+    right: -28%;
+    bottom: 23vh;
 }
 
 .concordVideo {
-    right: -9.1vh;
-    top: 11.7vh;
-    width: 5.1rem;
-    transform: rotate(-90deg);
+    right: -40%;
+    top: -12.1vh;
     box-shadow: -2px 3px 2px #887736, -5px 5px 13px #e6be277a;
+    transform: rotate(90deg) scale(-0.56);
 }
 
 .video-react-control-bar {

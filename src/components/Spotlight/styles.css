@@ -1,41 +1,40 @@
 #spotlight {
     background: rgb(249, 246, 233);
-    width: 11.5rem;
+    width: 12.5rem;
     border: 1px solid #f1c627;
     border-radius: 1rem;
     position: absolute;
-    right: 2rem;
+    right: 2.5rem;
     box-shadow: inset 0px 0px 10px #887735;
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
     transition-duration: 500ms;
+    flex-direction: column;
 }
 
-#spotlightBinoculars {
-    width: 5.1rem;
+#spotlightWellies {
+    width: 4.5rem;
     position: absolute;
-    top: -1.3rem;
-    transform: rotate(4deg) scaleX(-1);
-    left: 8rem;
+    top: -2.6rem;
+    transform: rotate(-17deg) scaleX(-1);
+    right: -1.6rem;
     filter: drop-shadow(2px 6px 5px #887735);
 }
 
 #spotlightBootPrint {
-    width: 45%;
+    width: 25%;
     background: white;
     border: 1px solid #f1c626;
     border-radius: inherit;
-    padding: 0.7rem 2.5rem;
+    padding: 0.7rem 2.2rem;
     box-shadow: inset 0 0 9px #c1b78e;
     animation: fade-in 1s ease-in-out;
 }
 
 #spotlightName {
-    font-size: 1.8rem;
-    font-family: 'Andes';
+    font-family: 'Kayak Sans';
     color: #887735;
     text-shadow: 0px 3px 1px #f1c627a6;
     margin: 1rem auto;
@@ -55,36 +54,16 @@
     z-index: 2;
 }
 
-.goToText {
-    position: absolute;
-    color: #4f472b;
+#spotlightExplore {
     font-family: 'Kayak Sans';
-}
-
-#spotlightGoTo1 {
-    font-size: 0.9rem;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    left: 22%;
-    letter-spacing: -0.2rem;
-    bottom: 2.4rem;
-    animation: fade-in 1.5s ease-in-out;
-}
-
-#spotlightGoTo2 {
-    left: 26%;
-    font-size: 1.1rem;
-    transform: rotate(45deg);
-    bottom: 1rem;
-    letter-spacing: 0.1rem;
-    animation: fade-in 2.5s ease-in;
-}
-
-#spotlightGoTo3 {
     left: 35.5%;
     bottom: 0.78rem;
     letter-spacing: 0.1rem;
     animation: fade-in 4s ease-in;
+    font-size: 1.2rem;
+    transform: translateY(7px);
+    color: #887735;
+    text-shadow: 0px 3px 1px #f1c627a6;
 }
 
 #spotlightArrows {
@@ -93,7 +72,7 @@
     position: absolute;
     left: 33%;
     bottom: -0.4rem;
-    opacity: 0.5;
+    opacity: 0.66;
     filter: brightness(0.8) hue-rotate(7deg) saturate(2);
     animation: fade-in 7s ease-in;
 }
@@ -124,13 +103,15 @@
     text-align: center;
     font-family: 'Kayak Sans';
     color: #887735;
+    width: 9rem;
+    transform: translate(-3px, -4px);
 }
 
 #spotlightFullScreen {
     position: absolute;
-    right: 1.7rem;
-    top: 12.6rem;
-    font-size: 0.8rem;
+    right: 3.2rem;
+    top: 8rem;
+    font-size: 1.1rem;
     color: #887735;
     animation: fade-in 3s ease-in;
 }
