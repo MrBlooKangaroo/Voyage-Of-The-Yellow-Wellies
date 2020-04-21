@@ -25,10 +25,14 @@
     src: local('Grotesque'), url(../../assets/fonts/brandon-grotesque.woff) format('woff');
 }
 
-
 @font-face {
     font-family: 'Caveat';
     src: local('Caveat'), url(../../assets/fonts/caveat-regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: local('Museo'), url(../../assets/fonts/museo-sans.woff) format('woff');
 }
 
 body {

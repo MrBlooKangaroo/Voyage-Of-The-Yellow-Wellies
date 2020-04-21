@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles.css'
 
 import VideoPlayer from '../../components/VideoPlayer'
@@ -11,12 +11,12 @@ const { map, guide, umbrella, audio } = assets
 const t = {
     titleVoyage: 'Voyage of the',
     titleWellies: 'Yellow Wellies',
-    subtitle: 'An Exploration of the SuAsCo Watershed'
+    subtitle: 'An Exploration of the SuAsCo Watershed',
+    liz: 'by Liz Helfer',
+    lizLinkUrl: 'http://www.elizabethhelfer.com/'
 }
 
 const soundScapeSFX = new Audio(audio.river)
-const umbrellaSFX = new Audio(audio.umbrella)
-const councilSFX = new Audio(audio.council)
 
 const Home = () => {
     const [isSFXOn, toggleIsSFXOn] = useState(false)
@@ -31,6 +31,12 @@ const Home = () => {
                 <h1 id='hdrWellies'>{t.titleWellies}</h1>
                 <h2 id='hdrVoyage'>{t.titleVoyage}</h2>
                 <h3 id='hdrSubtitle'>{t.subtitle}</h3>
+                <a  href={t.lizLinkUrl}
+                    target='_blank' 
+                    rel="noopener noreferrer"
+                >
+                    <h4 id='hdrLiz'>{t.liz}</h4>
+                </a>
 
                 <section id='ekphrasis'>
                     {ekphrasis.beginning1}
@@ -41,7 +47,6 @@ const Home = () => {
                         href={ekphrasis.linkUrl}
                         target='_blank' 
                         rel="noopener noreferrer"
-                        onClick={() => isSFXOn && councilSFX.play()}
                     >{ekphrasis.link}</a>
                     {ekphrasis.end}
                 </section>
@@ -83,7 +88,6 @@ const Home = () => {
                     href={umbrella.linkUrl}
                     target='_blank' 
                     rel="noopener noreferrer"
-                    onClick={() => isSFXOn && umbrellaSFX.play()}
                 >
                     <img 
                         id='umbrella' 

@@ -5,21 +5,56 @@
     border: solid 1px #f1c627;
     overflow: hidden;
     box-shadow: 2px 3px 2px #887736, 5px 5px 13px #e6be277a;
+    transition-duration: 500ms ease-in-out;
+    z-index: 99;
 }
 
-.assabetVideo {
+#assabetVideo.small {
+    left: 26vh;
+    top: 21vh;
+}
+
+#assabetVideo.medium {
+    left: 4%;
+    top: 22vh;
+}
+
+#assabetVideo.large {
     left: 11%;
     top: 10vh;
 }
 
-.sudburyVideo {
-    right: -28%;
-    bottom: 23vh;
+#sudburyVideo.small {
+    left: 34.6vh;
+    top: 57.5vh;
 }
 
-.concordVideo {
+#sudburyVideo.medium {
+    right: -15%;
+    bottom: 20.6vh;
+}
+
+#sudburyVideo.large {
+    right: -28%;
+    bottom: 20.5vh;
+}
+
+#concordVideo.small {
+    left: 42vh;
+    top: -5.5vh;
+}
+
+#concordVideo.medium {
+    left: 24.6vh;
+    top: -11.9vh;
+}
+
+#concordVideo.large {
     right: -40%;
     top: -12.1vh;
+}
+
+#concordVideo {
     box-shadow: -2px 3px 2px #887736, -5px 5px 13px #e6be277a;
     transform: rotate(90deg) scale(-0.56);
 }

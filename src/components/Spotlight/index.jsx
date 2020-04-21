@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHiking, faWindowClose, faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import { assets } from '../../utils/constants';
@@ -16,12 +16,29 @@ const closeSFX = new Audio(audio.close)
 const zoomInSFX = new Audio(audio.zoomIn)
 const exploreSFX = new Audio(audio.explore)
 
+const toolTipOffStyles = {
+    width: '4.5rem',
+    background: 'rgb(249, 246, 233',
+    border: '1px solid #f1c627',
+    boxShadow: 'inset 0px 0px 10px #887735',
+}
+
 export default ({ id, name, photoUrl, linkUrl, isSFXOn, isFullScreen, setIsFullScreen, selectedBootPrintId, setSelectedBootPrintId }) => {
-    
+    const getIsToolTipOn = () => selectedBootPrintId || (window.innerWidth > 1000 && !selectedBootPrintId)
+    const [isToolTipOn, setIsToolTipOn] = useState(getIsToolTipOn())
+    const handleResize = () => setIsToolTipOn(getIsToolTipOn())
+    useEffect(() => window.addEventListener('resize', handleResize))
+    const toolTipStyles = getIsToolTipOn() ? {} : {
+        width: '0',
+        background: 'none',
+        border: 'none',
+        boxShadow: 'none',
+    }
     return ( 
         <section id='spotlight' style={{
             height: selectedBootPrintId ? '22.7rem' : '4.4rem',
-            bottom: selectedBootPrintId ? '22.7rem' : '41rem'
+            bottom: selectedBootPrintId ? '22.7rem' : '41rem',
+            ...toolTipStyles
         }}>
             <img id='spotlightWellies' src={wellies.src} alt={wellies.alt} />
             {selectedBootPrintId ? (
@@ -64,7 +81,7 @@ export default ({ id, name, photoUrl, linkUrl, isSFXOn, isFullScreen, setIsFullS
                         }}
                     />
                 </>
-            ) : (
+            ) : isToolTipOn && (
                 <span id='spotlightPrompt'>{t.prompt}</span>
             )}
             {isFullScreen && 

@@ -23,14 +23,14 @@ export default ({
                 id='audioIcon' 
                 src={duck.src} 
                 alt={duck.alt} 
-                onClick={() => isSFXOn && quackSFX.play()}
+                onClick={() => quackSFX.play()}
             />
 
             <button id='sfxButton' className={
                 isSFXOn ? 'on' : 'off'
             } onClick={() => {
                 toggleIsSFXOn(!isSFXOn)
-                isSFXOn && toggleSFX.play()
+                !isSFXOn && toggleSFX.play()
             }}>{
                 isSFXOn ? 'FX On' : 'FX Off'
             }</button>
