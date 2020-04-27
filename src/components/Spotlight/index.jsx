@@ -16,13 +16,6 @@ const closeSFX = new Audio(audio.close)
 const zoomInSFX = new Audio(audio.zoomIn)
 const exploreSFX = new Audio(audio.explore)
 
-const toolTipOffStyles = {
-    width: '4.5rem',
-    background: 'rgb(249, 246, 233',
-    border: '1px solid #f1c627',
-    boxShadow: 'inset 0px 0px 10px #887735',
-}
-
 export default ({ id, name, photoUrl, linkUrl, isSFXOn, isFullScreen, setIsFullScreen, selectedBootPrintId, setSelectedBootPrintId }) => {
     const getIsToolTipOn = () => selectedBootPrintId || (window.innerWidth > 1000 && !selectedBootPrintId)
     const [isToolTipOn, setIsToolTipOn] = useState(getIsToolTipOn())

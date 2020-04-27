@@ -138,6 +138,17 @@
     transform: scale(0.9);
 }
 
+.spotlightSmall {
+    transform: scale(0.5);
+    top: 1rem;
+    right: 2rem;
+}
+
+.spotlightLarge {
+    transform: scale(1);
+    right: 2.5rem;
+}
+
 @keyframes fade-in {
     from {
       opacity: 0;

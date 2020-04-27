@@ -101,16 +101,17 @@
 }
 
 #map {
-    height: 95vh;
+    height: 90vh;
     opacity: 0.48;
     filter: drop-shadow(5px 14px 7px #222) brightness(1.03) saturate(3);
+    margin-top: 3vh;
     z-index: -99;
 }
 
 #guide {
     bottom: 2rem;
     position: absolute;
-    width: 33vmin;
+    width: 22vmin;
     left: 2rem;
     filter: brightness(1.03) saturate(3) drop-shadow(-2px 2px 4px #796c28bd);
     z-index: 3;

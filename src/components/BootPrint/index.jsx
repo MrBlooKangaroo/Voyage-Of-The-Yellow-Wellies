@@ -7,6 +7,8 @@ const { audio } = assets
 const bootClickSFX = new Audio(audio.bootClick)
 const bootHoverSFX = new Audio(audio.bootHover)
 
+const sizeOffset = 0.94736842105
+
 const BootPrint = ({ id, name, photoUrl, setSelectedBootPrintId, selectedBootPrintId, isSFXOn, x, y, angle }) => {
     const [isHovering, setIsHovering] = useState(false)
     const isFlipped = [26, 27].includes(id)
@@ -31,8 +33,8 @@ const BootPrint = ({ id, name, photoUrl, setSelectedBootPrintId, selectedBootPri
                 onMouseEnter={onBootPrintHover}
                 onMouseLeave={() => setIsHovering(false)}                
                 style={{
-                    left: `${x}vh`,
-                    bottom: `${y}vh`,
+                    left: `${x * sizeOffset}vh`,
+                    bottom: `${y * sizeOffset}vh`,
                     transform: `${
                         isHovering ? 'scale(1.2)' : 'scale(1)'
                     } rotate(${angle}deg)${

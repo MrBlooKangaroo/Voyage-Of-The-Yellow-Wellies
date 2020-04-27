@@ -1,37 +1,35 @@
 #audioPlayer {
     background: linear-gradient(337deg, rgba(245, 213, 93, 0.5) -35%, rgba(255,255,255,1) 100%);
-    width: 14rem;
+    width: 20vw;
     border: 1px solid #81e1fd7d;
     border-radius: 1rem;
     position: absolute;
-    right: 3rem;
+    right: 1vw;
     box-shadow: inset 0px 0px 28px #0080bb;
     align-items: center;
-    padding: 1rem;
+    padding: 1vh 1vw;
     box-sizing: border-box;
-    bottom: 7rem;
-    height: 6rem;
+    bottom: 10vh;
+    height: 10vh;
     animation: 1s ease-in fade-in;
     font-family: 'Kayak Sans';
     letter-spacing: 1.6px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
     z-index: 100;
+    max-width: 12rem;
+    min-width: 8rem;
 }
 
 #audioTitle {
-    margin: -0.5rem auto;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     text-align: center;
     color: #72632d;
     background: #ffffffc7;
     padding: 0.2rem 0.6rem;
     border-radius: 1rem;
     box-shadow: inset 0 0 8px #8bc8ae;
-    position: absolute;
-    top: 1.1rem;
-    left: 14.67%;
 }
 
 #audioIcon {
@@ -50,13 +48,19 @@
 .on, .off {
     font-family: 'Kayak Sans';
     color: #9b624b;
-    width: 5rem;
-    height: 2.5rem;
-    bottom: 0.7rem;
-    position: absolute;
+    width: 44%;
+    min-width: 3.8rem;
+    min-height: 2rem;
     border-radius: 4rem;
-    font-size: 1rem;
-    padding-top: 0.275rem;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
+}
+
+#audioButtonContainer {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .on:active, off:active {

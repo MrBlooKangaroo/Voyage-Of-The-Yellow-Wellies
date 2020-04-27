@@ -13,7 +13,8 @@ const t = {
     titleWellies: 'Yellow Wellies',
     subtitle: 'An Exploration of the SuAsCo Watershed',
     liz: 'by Liz Helfer',
-    lizLinkUrl: 'http://www.elizabethhelfer.com/'
+    lizLinkUrl: 'http://www.elizabethhelfer.com/',
+    titleBackgroundAlt: 'Bootprint in background'
 }
 
 const soundScapeSFX = new Audio(audio.river)
@@ -60,7 +61,7 @@ const Home = () => {
                     <img id='map' src={map.src} alt={map.alt} />
                     {bootPrints.map(bootPrint => 
                         <BootPrint 
-                        key={bootPrint.id}
+                            key={bootPrint.id}
                             selectedBootPrintId={selectedBootPrintId}
                             setSelectedBootPrintId={setSelectedBootPrintId}
                             isSFXOn={isSFXOn}
@@ -75,14 +76,14 @@ const Home = () => {
                     isSFXOn={isSFXOn} toggleIsSFXOn={toggleIsSFXOn} 
                     isSoundScapeOn={isSoundScapeOn} toggleIsSoundScapeOn={toggleIsSoundScapeOn} 
                 />
-                <Spotlight 
+                {/* <Spotlight 
                     isSFXOn={isSFXOn} 
                     isFullScreen={isFullScreen}
                     setIsFullScreen={setIsFullScreen}
                     selectedBootPrintId={selectedBootPrintId} 
                     setSelectedBootPrintId={setSelectedBootPrintId}
                     {...selectedBootPrint} 
-                />
+                /> */}
                 <a 
                     id='ekphrasisLink' 
                     href={umbrella.linkUrl}
