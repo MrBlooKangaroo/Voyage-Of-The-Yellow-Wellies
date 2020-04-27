@@ -6,7 +6,7 @@
     overflow: hidden;
     box-shadow: 2px 3px 2px #887736, 5px 5px 13px #e6be277a;
     transition-duration: 500ms ease-in-out;
-    z-index: 99;
+    z-index: 0;
 }
 
 #assabetVideo.small {

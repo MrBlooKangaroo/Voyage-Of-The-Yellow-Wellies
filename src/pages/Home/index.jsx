@@ -76,14 +76,14 @@ const Home = () => {
                     isSFXOn={isSFXOn} toggleIsSFXOn={toggleIsSFXOn} 
                     isSoundScapeOn={isSoundScapeOn} toggleIsSoundScapeOn={toggleIsSoundScapeOn} 
                 />
-                {/* <Spotlight 
+                <Spotlight 
                     isSFXOn={isSFXOn} 
                     isFullScreen={isFullScreen}
                     setIsFullScreen={setIsFullScreen}
                     selectedBootPrintId={selectedBootPrintId} 
                     setSelectedBootPrintId={setSelectedBootPrintId}
                     {...selectedBootPrint} 
-                /> */}
+                />
                 <a 
                     id='ekphrasisLink' 
                     href={umbrella.linkUrl}

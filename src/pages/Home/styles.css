@@ -12,7 +12,7 @@
     position: fixed;
     font-family: 'Kayak Sans';
     color: #887735;
-    left: 1.2rem;
+    left: 1vw;
     top: -1rem;
     text-shadow: 0px 3px 1px #f1c627a6;
 }
@@ -22,7 +22,7 @@
     position: fixed;
     font-family: 'Caveat';
     color: #f1c627;
-    left: 1.4rem;
+    left: 1vw;
     top: -2.1rem;
     text-shadow: -1px 2px 1px #444;
 }
@@ -74,7 +74,7 @@
     font-size: 1.9vmin;
     color: #796c28;
     position: absolute;
-    left: 2rem;
+    left: 2vw;
     top: 26vmin;
     text-shadow: 1px 1px 1px hsla(47, 31%, 67%, 0.72);
     z-index: 3;
@@ -111,8 +111,8 @@
 #guide {
     bottom: 2rem;
     position: absolute;
-    width: 22vmin;
-    left: 2rem;
+    width: 25vmin;
+    left: 2vw;
     filter: brightness(1.03) saturate(3) drop-shadow(-2px 2px 4px #796c28bd);
     z-index: 3;
 }
@@ -120,8 +120,8 @@
 #umbrella {
     width: 32vmin;
     position: absolute;
-    right: 2.5rem;
-    bottom: 2rem;
+    right: 1vw;
+    bottom: 1.5rem;
     animation: 10s hueRotate infinite linear;
 }
 #umbrella:hover {

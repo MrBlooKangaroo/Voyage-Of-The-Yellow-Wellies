@@ -1,10 +1,10 @@
 #spotlight {
     background: rgba(249, 246, 233, 0.77);
-    width: 12.5rem;
+    width: 20vw;
     border: 1px solid #f1c627;
     border-radius: 1rem;
     position: absolute;
-    right: 2.5rem;
+    right: 1vw;
     box-shadow: inset 0px 0px 10px #887735;
     display: flex;
     align-items: center;
@@ -12,25 +12,28 @@
     box-sizing: border-box;
     transition-duration: 500ms;
     flex-direction: column;
+    bottom: 25vh;
+    max-width: 12rem;
+    min-width: 8rem;
 }
 
 #spotlightWellies {
-    width: 4.5rem;
+    width: 3.5rem;
     position: absolute;
-    top: -2.6rem;
+    top: -3.2rem;
     transform: rotate(-17deg) scaleX(-1);
-    right: -1.6rem;
-    filter: drop-shadow(2px 6px 5px #887735);
+    right: 0.1rem;
+    filter: drop-shadow(2px 4px 3px #887735);
 }
 
 #spotlightBootPrint {
-    width: 25%;
     background: white;
     border: 1px solid #f1c626;
     border-radius: inherit;
-    padding: 0.7rem 2.2rem;
+    padding: 0.7rem 20%;
     box-shadow: inset 0 0 9px #c1b78e;
     animation: fade-in 1s ease-in-out;
+    height: 33%;
 }
 
 #spotlightName {
@@ -56,37 +59,37 @@
 
 #spotlightExplore {
     font-family: 'Kayak Sans';
-    left: 35.5%;
     bottom: 0.78rem;
     letter-spacing: 0.1rem;
     animation: fade-in 4s ease-in;
     font-size: 1.2rem;
-    transform: translateY(7px);
-    color: #887735;
+    transform: translate(7px, 7px);
+    color: #16d3f8;
     text-shadow: 0px 3px 1px #f1c627a6;
 }
 
 #spotlightArrows {
-    width: 7.4rem;
+    width: 66%;
+    max-width: 7rem;
     transform: rotate(90deg) scaleY(1);
     position: absolute;
-    left: 33%;
     bottom: -0.4rem;
     opacity: 0.66;
     filter: brightness(0.8) hue-rotate(7deg) saturate(2);
     animation: fade-in 7s ease-in;
+    right: 0;
 }
 
 #spotlightIcon {
     color: #887735;
-    font-size: 2.6rem;
+    font-size: 4.4vmin;
     background: white;
     border: 1px solid #feffff;
     border-radius: 1rem;
-    padding: 0.8rem 1.2rem;
+    padding: 7% 10%;
     box-shadow: inset 0 0 33px #f1c626;
     position: absolute;
-    left: 30%;
+    left: 33%;
     bottom: 1.9rem;
     animation: fade-in 3s ease-in-out;
 }
@@ -99,19 +102,17 @@
 }
 
 #spotlightPrompt {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     font-family: 'Kayak Sans';
     color: #887735;
-    width: 9rem;
-    transform: translate(-3px, -4px);
 }
 
 #spotlightFullScreen {
     position: absolute;
-    right: 3.2rem;
-    top: 8rem;
-    font-size: 1.1rem;
+    right: 29%;
+    top: 36%;
+    font-size: 80%;
     color: #887735;
     animation: fade-in 3s ease-in;
 }
@@ -125,10 +126,11 @@
 
 #spotlightClose {
     position: absolute;
-    right: -1.6rem;
-    top: 3rem;
-    font-size: 1.1rem;
+    right: 0;
+    bottom: -1.5rem;
+    font-size: 100%;
     color: #887735;
+    z-index: 100;
 }
 #spotlightClose:hover {
     color: #f1c626;

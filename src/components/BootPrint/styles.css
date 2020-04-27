@@ -13,10 +13,10 @@
 .bootPrint.selected {
     animation: 1s blink ease-in-out infinite;
 }
-
+/* 
 #bootPrintContainer:hover {
     animation: 300ms 600ms shake ease-in infinite;
-}
+} */
 
 @keyframes shake {
     from {
