@@ -71,6 +71,7 @@ export const videos = {
     concordRiver,
     sudburyRiver
 }
+
 export const images = {
     arrows,
     duck,
@@ -79,6 +80,7 @@ export const images = {
     umbrellaLogo,
     yellowWellies
 }
+
 export const bootPrints = {
     assabet: {
         A1,
