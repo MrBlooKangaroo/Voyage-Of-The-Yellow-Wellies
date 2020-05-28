@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/assets/audio
+/src/assets/videos
+/src/assets/images

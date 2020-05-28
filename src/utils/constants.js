@@ -1,47 +1,45 @@
+import { audio, videos, images, bootPrints as bootPrintImages } from '../assets'
+
 export const paths = {
     home: '/'
 }
 
-export const awsUrl = 'https://yellow-wellies-production.s3.amazonaws.com'
-
 export const assets = {
     wellies: {
-        src: `${awsUrl}/assets/yellowWellies.png`,
+        src: images.yellowWellies,
         alt: 'Yellow Wellies'
     },
     map: {
-        src: `${awsUrl}/assets/SuAsCoMap.png`,
+        src: images.suAsCoMap,
         alt: 'SuAsCo Map',
     },
     guide: {
-        src: `${awsUrl}/assets/guide.png`,
+        src: images.guide,
         alt: 'SuAsCo Map Guide'
     },
     arrows: {
-        src: `${awsUrl}/assets/arrows.png`,
+        src: images.arrows,
         alt: 'Arrows Pointing Right'
     },
     duck: {
-        src: `${awsUrl}/assets/duck.png`,
+        src: images.duck,
         alt: 'Duck'
     },
     umbrella: {
-        src: `${awsUrl}/assets/umbrellaLogo.png`,
+        src: images.umbrellaLogo,
         alt: 'The Umbrella Arts Center',
         linkUrl: 'https://theumbrellaarts.org/'
     },
     audio: {
-        bootClick: `${awsUrl}/assets/bootClick.wav`,
-        bootHover: `${awsUrl}/assets/bootHover.mp3`,
-        close: `${awsUrl}/assets/close.wav`,
-        explore: `${awsUrl}/assets/explore.wav`,
-        toggle: `${awsUrl}/assets/toggle.wav`,
-        zoomIn: `${awsUrl}/assets/zoomIn.wav`,
-        zoomOut: `${awsUrl}/assets/zoomOut.wav`,
-        umbrella: `${awsUrl}/assets/umbrella.wav`,
-        council: `${awsUrl}/assets/council.wav`,
-        river: `${awsUrl}/assets/river.mp3`,
-        quack: `${awsUrl}/assets/quack.wav`
+        bootClick: audio.bootClick,
+        bootHover: audio.bootHover,
+        close: audio.close,
+        explore: audio.explore,
+        toggle: audio.toggle,
+        zoomIn: audio.zoomIn,
+        zoomOut: audio.zoomOut,
+        river: audio.river,
+        quack: audio.quack
     }
 }
 
@@ -49,17 +47,17 @@ export const rivers = [
     {
         id: 1,
         name: 'Assabet',
-        videoUrl: `${awsUrl}/rivers/assabet/videos/AssabetRiver.mp4`
+        videoUrl: videos.assabetRiver
     },
     {
         id: 2,
         name: 'Sudbury',
-        videoUrl: `${awsUrl}/rivers/sudbury/videos/SudburyRiver.mp4`
+        videoUrl: videos.sudburyRiver
     },
     {
         id: 3,
         name: 'Concord',
-        videoUrl: `${awsUrl}/rivers/concord/videos/ConcordRiver.mp4`
+        videoUrl: videos.concordRiver
     }
 ]
 
@@ -67,7 +65,7 @@ export const bootPrints = [
     {
         id: 1,
         name: 'Upper Assabet Report Card',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A1.png`,
+        photoUrl: bootPrintImages.assabet.A1,
         linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-assabet-river/',
         riverId: 1,
         x: 8.4,
@@ -77,7 +75,7 @@ export const bootPrints = [
     {
         id: 2,
         name: 'Assabet Headwaters',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A2.png`,
+        photoUrl: bootPrintImages.assabet.A2,
         linkUrl: 'http://www.oars3rivers.org/river/tributaries/assabet-headwaters',
         riverId: 1,
         x: 11,
@@ -87,7 +85,7 @@ export const bootPrints = [
     {
         id: 3,
         name: 'Osprey',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A3.png`,
+        photoUrl: bootPrintImages.assabet.A3,
         linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/birds/ospreys',
         riverId: 1,
         x: 8,
@@ -97,7 +95,7 @@ export const bootPrints = [
     {
         id: 4,
         name: 'River Access',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A4.png`,
+        photoUrl: bootPrintImages.assabet.A4,
         linkUrl: 'http://www.oars3rivers.org/river_map/map/1',
         riverId: 1,
         x: 13,
@@ -107,7 +105,7 @@ export const bootPrints = [
     {
         id: 5,
         name: 'Brook Trout',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A5.png`,
+        photoUrl: bootPrintImages.assabet.A5,
         linkUrl: 'http://www.oars3rivers.org/our-work/monitoring/river-continuity',
         riverId: 1,
         x: 12.2,
@@ -117,7 +115,7 @@ export const bootPrints = [
     {
         id: 6,
         name: 'Lower Assabet Report Card',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A6.png`,
+        photoUrl: bootPrintImages.assabet.A6,
         linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/lower-assabet-river/',
         riverId: 1,
         x: 18.8,
@@ -127,7 +125,7 @@ export const bootPrints = [
     {
         id: 7,
         name: 'Great Blue Heron',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A7.png`,
+        photoUrl: bootPrintImages.assabet.A7,
         linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/birds/great-blue-herons',
         riverId: 1,
         x: 21.5,
@@ -137,7 +135,7 @@ export const bootPrints = [
     {
         id: 8,
         name: 'Trails',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A8.png`,
+        photoUrl: bootPrintImages.assabet.A8,
         linkUrl: 'http://www.oars3rivers.org/our-work/blue-trails',
         riverId: 1,
         x: 27.7,
@@ -147,7 +145,7 @@ export const bootPrints = [
     {
         id: 9,
         name: 'Ben Smith Dam',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A9.png`,
+        photoUrl: bootPrintImages.assabet.A9,
         linkUrl: 'http://www.oars3rivers.org/threats/sediment-dams',
         riverId: 1,
         x: 31,
@@ -157,7 +155,7 @@ export const bootPrints = [
     {
         id: 10,
         name: 'Fish Kill',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A10.png`,
+        photoUrl: bootPrintImages.assabet.A10,
         linkUrl: 'http://www.oars3rivers.org/fishkill-assabet-2013',
         riverId: 1,
         x: 38.7,
@@ -167,7 +165,7 @@ export const bootPrints = [
     {
         id: 11,
         name: 'River Otters',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A11.png`,
+        photoUrl: bootPrintImages.assabet.A11,
         linkUrl: 'https://www.mass.gov/service-details/learn-about-river-otters',
         riverId: 1,
         x: 41,
@@ -177,7 +175,7 @@ export const bootPrints = [
     {
         id: 12,
         name: 'River Facts',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A12.png`,
+        photoUrl: bootPrintImages.assabet.A12,
         linkUrl: 'http://www.oars3rivers.org/river/assabet-river-facts',
         riverId: 1,
         x: 48,
@@ -187,7 +185,7 @@ export const bootPrints = [
     {
         id: 13,
         name: 'Wild & Scenic River Stewardship Council',
-        photoUrl: `${awsUrl}/rivers/assabet/bootPrints/A13.png`,
+        photoUrl: bootPrintImages.assabet.A13,
         linkUrl: 'http://www.sudbury-assabet-concord.org/',
         riverId: 1,
         x: 50.4,
@@ -197,7 +195,7 @@ export const bootPrints = [
     {
         id: 14,
         name: 'Upper Sudbury Report Card',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S1.png`,
+        photoUrl: bootPrintImages.sudbury.S1,
         linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-sudbury-river/',
         riverId: 2,
         x: 43.5,
@@ -207,7 +205,7 @@ export const bootPrints = [
     {
         id: 15,
         name: 'Lake Sudbury',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S2.png`,
+        photoUrl: bootPrintImages.sudbury.S2,
         linkUrl: 'https://www.walden.org/property/fairhaven-bay/',
         riverId: 2,
         x: 49.3,
@@ -217,7 +215,7 @@ export const bootPrints = [
     {
         id: 16,
         name: 'Great Meadows National Wildlife Refuge',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S3.png`,
+        photoUrl: bootPrintImages.sudbury.S3,
         linkUrl: 'https://www.fws.gov/refuge/great_meadows/',
         riverId: 2,
         x: 49.1,
@@ -227,7 +225,7 @@ export const bootPrints = [
     {
         id: 17,
         name: 'Water Cycle',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S4.png`,
+        photoUrl: bootPrintImages.sudbury.S4,
         linkUrl: 'http://www.oars3rivers.org/river/watercycle',
         riverId: 2,
         x: 54.4,
@@ -237,7 +235,7 @@ export const bootPrints = [
     {
         id: 18,
         name: 'Climate Change',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S5.png`,
+        photoUrl: bootPrintImages.sudbury.S5,
         linkUrl: 'http://www.oars3rivers.org/threats/natural-flow',
         riverId: 2,
         x: 55.1,
@@ -247,7 +245,7 @@ export const bootPrints = [
     {
         id: 19,
         name: 'Water Pollution',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S6.png`,
+        photoUrl: bootPrintImages.sudbury.S6,
         linkUrl: 'http://www.oars3rivers.org/threats/water-pollution',
         riverId: 2,
         x: 59,
@@ -257,7 +255,7 @@ export const bootPrints = [
     {
         id: 20,
         name: 'Beaver',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S7.png`,
+        photoUrl: bootPrintImages.sudbury.S7,
         linkUrl: 'https://www.massaudubon.org/learn/nature-wildlife/mammals/beavers',
         riverId: 2,
         x: 56,
@@ -267,7 +265,7 @@ export const bootPrints = [
     {
         id: 21,
         name: 'Invasive Plants',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S8.png`,
+        photoUrl: bootPrintImages.sudbury.S8,
         linkUrl: 'http://www.oars3rivers.org/threats/invasive',
         riverId: 2,
         x: 59,
@@ -277,7 +275,7 @@ export const bootPrints = [
     {
         id: 22,
         name: 'Black Flies',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S9.png`,
+        photoUrl: bootPrintImages.sudbury.S9,
         linkUrl: 'https://nabfa-blackfly.org/',
         riverId: 2,
         x: 56.4,
@@ -287,7 +285,7 @@ export const bootPrints = [
     {
         id: 23,
         name: 'River Facts',
-        photoUrl: `${awsUrl}/rivers/sudbury/bootPrints/S10.png`,
+        photoUrl: bootPrintImages.sudbury.S10,
         linkUrl: 'http://www.oars3rivers.org/river/sudbury-river-facts',
         riverId: 2,
         x: 59.1,
@@ -297,7 +295,7 @@ export const bootPrints = [
     {
         id: 24,
         name: 'Upper Concord Report Card',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C1.png`,
+        photoUrl: bootPrintImages.concord.C1,
         linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/upper-concord-river/',
         riverId: 3,
         x: 53.5,
@@ -307,7 +305,7 @@ export const bootPrints = [
     {
         id: 25,
         name: 'Minuteman National Historic Park',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C2.png`,
+        photoUrl: bootPrintImages.concord.C2,
         linkUrl: 'https://www.nps.gov/mima/index.htm',
         riverId: 3,
         x: 57.9,
@@ -317,7 +315,7 @@ export const bootPrints = [
     {
         id: 26,
         name: 'The Old Manse',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C3.png`,
+        photoUrl: bootPrintImages.concord.C3,
         linkUrl: 'http://www.thetrustees.org/places-to-visit/metro-west/old-manse.html',
         riverId: 3,
         x: 61,
@@ -327,7 +325,7 @@ export const bootPrints = [
     {
         id: 27,
         name: 'October Farm',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C4.png`,
+        photoUrl: bootPrintImages.concord.C4,
         linkUrl: 'https://www.concordma.gov/DocumentCenter/View/6956/October-Farm-Riverfront-Trail-Guide',
         riverId: 3,
         x: 56.3,
@@ -337,7 +335,7 @@ export const bootPrints = [
     {
         id: 28,
         name: 'Squaw Sachem Trail',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C5.png`,
+        photoUrl: bootPrintImages.concord.C5,
         linkUrl: 'https://www.concordma.gov/DocumentCenter/View/2095/River-Confluence-Trail-Guide',
         riverId: 3,
         x: 58.9,
@@ -347,7 +345,7 @@ export const bootPrints = [
     {
         id: 29,
         name: 'Lower Concord Report Card',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C6.png`,
+        photoUrl: bootPrintImages.concord.C6,
         linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/regions/lower-concord-river/',
         riverId: 3,
         x: 64,
@@ -357,7 +355,7 @@ export const bootPrints = [
     {
         id: 30,
         name: 'Concord River Greenway',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C7.png`,
+        photoUrl: bootPrintImages.concord.C7,
         linkUrl: 'https://lowelllandtrust.org/concord-river-greenway/',
         riverId: 3,
         x: 61.8,
@@ -367,7 +365,7 @@ export const bootPrints = [
     {
         id: 31,
         name: 'River Facts',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C8.png`,
+        photoUrl: bootPrintImages.concord.C8,
         linkUrl: 'http://www.oars3rivers.org/river/concord-river-facts',
         riverId: 3,
         x: 67.8,
@@ -377,7 +375,7 @@ export const bootPrints = [
     {
         id: 32,
         name: 'Watershed Report Card',
-        photoUrl: `${awsUrl}/rivers/concord/bootPrints/C9.png`,
+        photoUrl: bootPrintImages.concord.C9,
         linkUrl: 'https://ecoreportcard.org/report-cards/sudbury-assabet-concord-rivers/',
         riverId: 3,
         x: 65.3,
