@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import YouTube from 'react-youtube';
+import YouTube from 'react-youtube'
 import './styles.css'
 
 import { camelize, getWindowState } from '../../utils/common'
@@ -10,7 +10,6 @@ const VideoPlayer = ({ id, name, videoId }) => {
         width: newWindowState.width,
         height: newWindowState.height,
         playerVars: {
-            autoplay: 1,
             loop: 1,
         }
     }
@@ -26,6 +25,7 @@ const VideoPlayer = ({ id, name, videoId }) => {
                 videoId={videoId}
                 className={'player'}
                 opts={opts}
+                onReady={event => event.target.playVideo()}
             />
         </div>
     )
