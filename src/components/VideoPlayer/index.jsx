@@ -12,7 +12,6 @@ const VideoPlayer = ({ id, name, videoId }) => {
         playerVars: {
             autoplay: 1,
             loop: 1,
-            controls: 0,
         }
     }
     const [windowState, setWindowState] = useState(newWindowState)
