@@ -47,17 +47,17 @@ export const rivers = [
     {
         id: 1,
         name: 'Assabet',
-        videoUrl: videos.assabetRiver
+        videoId: videos.assabetRiver
     },
     {
         id: 2,
         name: 'Sudbury',
-        videoUrl: videos.sudburyRiver
+        videoId: videos.sudburyRiver
     },
     {
         id: 3,
         name: 'Concord',
-        videoUrl: videos.concordRiver
+        videoId: videos.concordRiver
     }
 ]
 

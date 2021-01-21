@@ -46,19 +46,8 @@
 
 #concordVideo.medium {
     left: 24.6vh;
-    top: -11.9vh;
 }
 
 #concordVideo.large {
     right: -40%;
-    top: -12.1vh;
-}
-
-#concordVideo {
-    box-shadow: -2px 3px 2px #887736, -5px 5px 13px #e6be277a;
-    transform: rotate(90deg) scale(-0.56);
-}
-
-.video-react-control-bar {
-    display: none !important;
 }
